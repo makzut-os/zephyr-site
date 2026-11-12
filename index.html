@@ -1,0 +1,247 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Zephyr 7.1.0 — лёгкий нативный Spotify-клиент для Windows без встроенного Chromium. Медиатека, поиск и управление музыкой.">
+  <meta name="author" content="Makzut (HorusOS)">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <meta name="theme-color" content="#28aeea">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="ru_RU">
+  <meta property="og:site_name" content="Zephyr">
+  <meta property="og:title" content="Zephyr — музыка без тяжёлого интерфейса">
+  <meta property="og:description" content="Лёгкий нативный Spotify-клиент для Windows без встроенного Chromium.">
+  <meta property="og:url" content="https://localhost:5173/">
+  <meta property="og:image" content="https://localhost:5173/assets/og-zephyr-7.1.0.png">
+  <meta property="og:image:width" content="1000">
+  <meta property="og:image:height" content="760">
+  <meta property="og:image:alt" content="Главное окно Zephyr 7.1.0 — медиатека и панель управления музыкой">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Zephyr — лёгкий плеер для Windows">
+  <meta name="twitter:description" content="Медиатека и управление музыкой без встроенного Chromium.">
+  <meta name="twitter:image" content="https://localhost:5173/assets/og-zephyr-7.1.0.png">
+  <title>Zephyr 7.1.0 — лёгкий Spotify-клиент для Windows</title>
+  <link rel="canonical" href="https://localhost:5173/">
+  <link rel="icon" href="assets/Zephyr.ico" sizes="any">
+  <link rel="icon" type="image/png" href="assets/zephyr-icon.png">
+  <link rel="apple-touch-icon" href="assets/zephyr-icon.png">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Перейти к содержимому</a>
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="Zephyr — наверх">
+      <img src="assets/Zephyr.ico" alt="" width="34" height="34">
+      <span>Zephyr</span>
+    </a>
+    <nav aria-label="Основная навигация">
+      <a href="#features">Возможности</a>
+      <a href="#screenshots">Интерфейс</a>
+      <a href="#requirements">Требования</a>
+      <a href="#feedback">Связь</a>
+    </nav>
+    <a class="header-download" href="downloads/Zephyr-7.1.0-Setup.exe" download>Скачать</a>
+  </header>
+
+  <main id="main-content">
+    <span id="top"></span>
+    <section class="hero section-shell">
+      <div class="hero-copy">
+        <p class="eyebrow">Нативный клиент для Windows</p>
+        <h1>Музыка остаётся.<br>Тяжёлый интерфейс — нет.</h1>
+        <p class="lead">Zephyr собран на Rust без встроенного Chromium. Медиатека, поиск и управление воспроизведением собраны в одном спокойном окне.</p>
+        <div class="hero-actions">
+          <a class="button primary" href="downloads/Zephyr-7.1.0-Setup.exe" download>Скачать Zephyr 7.1.0</a>
+        </div>
+        <dl class="quick-facts">
+          <div><dt>7,6 МБ</dt><dd>размер установщика</dd></div>
+          <div><dt>≈ 10 МБ</dt><dd>интерфейс в smoke‑тесте</dd></div>
+          <div><dt>0</dt><dd>встроенных браузеров</dd></div>
+        </dl>
+      </div>
+      <div class="hero-visual" aria-label="Главное окно Zephyr">
+        <div class="window-frame">
+          <img src="assets/zephyr-main-7.1.0.png" alt="Главное окно Zephyr с медиатекой и панелью управления">
+        </div>
+      </div>
+    </section>
+
+    <section class="statement">
+      <div class="section-shell statement-grid">
+        <h2>Знакомый поток работы.<br>Меньше лишних слоёв.</h2>
+        <p>Вход открывается в системном браузере, а само приложение остаётся нативным. Zephyr не тащит внутрь ещё один Chrome и не пытается заменить Windows собственным окружением.</p>
+      </div>
+    </section>
+
+    <section class="section-shell features" id="features">
+      <div class="section-heading">
+        <p class="eyebrow">Что внутри</p>
+        <h2>Только то, что нужно плееру</h2>
+      </div>
+      <div class="feature-grid">
+        <article>
+          <span class="feature-number">01</span>
+          <h3>Медиатека Spotify</h3>
+          <p>Плейлисты, сохранённые альбомы и любимые треки доступны из одного окна.</p>
+        </article>
+        <article>
+          <span class="feature-number">02</span>
+          <h3>Поиск без спама</h3>
+          <p>Запрос отправляется только после Enter — приложение не обращается к API на каждую букву.</p>
+        </article>
+        <article>
+          <span class="feature-number">03</span>
+          <h3>Управление музыкой</h3>
+          <p>Перемотка одним кликом, громкость, следующий трек, перемешивание и добавление в любимые.</p>
+        </article>
+        <article>
+          <span class="feature-number">04</span>
+          <h3>Нативная лёгкость</h3>
+          <p>Rust и Win32 вместо Electron. Интерфейс запускается быстро и экономно расходует память.</p>
+        </article>
+        <article>
+          <span class="feature-number">05</span>
+          <h3>Адаптивное окно</h3>
+          <p>Полный экран, половина экрана через Windows Snap и возврат к обычному размеру без сломанной разметки.</p>
+        </article>
+        <article>
+          <span class="feature-number">06</span>
+          <h3>Локальные данные</h3>
+          <p>Кэш и рабочие файлы хранятся рядом с приложением; данные аккаунта не входят в установщик.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="screens-section" id="screenshots">
+      <div class="section-shell">
+        <div class="section-heading screenshot-heading">
+          <div>
+            <p class="eyebrow">Настоящий интерфейс</p>
+            <h2>Вот как выглядит Zephyr</h2>
+          </div>
+          <div class="view-tabs" role="tablist" aria-label="Скриншоты Zephyr">
+            <button class="active" type="button" role="tab" aria-selected="true" data-image="assets/zephyr-main-7.1.0.png" data-caption="Главное окно до подключения аккаунта">Главное окно</button>
+            <button type="button" role="tab" aria-selected="false" data-image="assets/zephyr-pairing-7.1.0.png" data-caption="Состояние подключения звука Spotify">Подключение звука</button>
+          </div>
+        </div>
+        <figure class="screenshot-stage">
+          <img id="product-shot" src="assets/zephyr-main-7.1.0.png" alt="Главное окно Zephyr до подключения аккаунта">
+          <figcaption id="shot-caption">Главное окно до подключения аккаунта</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="section-shell architecture">
+      <div class="section-heading">
+        <p class="eyebrow">Простой маршрут</p>
+        <h2>От запуска до музыки</h2>
+      </div>
+      <ol class="steps">
+        <li><span>1</span><div><h3>Установи</h3><p>Один компактный установщик для Windows x64.</p></div></li>
+        <li><span>2</span><div><h3>Войди</h3><p>Zephyr откроет официальный сайт Spotify в системном браузере.</p></div></li>
+        <li><span>3</span><div><h3>Подключи звук</h3><p>Пройди разовую настройку аудио и вернись в плеер.</p></div></li>
+        <li><span>4</span><div><h3>Слушай</h3><p>Выбирай музыку, управляй очередью и громкостью из Zephyr.</p></div></li>
+      </ol>
+    </section>
+
+    <section class="requirements" id="requirements">
+      <div class="section-shell requirements-grid">
+        <div>
+          <p class="eyebrow">Перед установкой</p>
+          <h2>Что потребуется</h2>
+        </div>
+        <dl>
+          <div><dt>Поддерживается</dt><dd>Windows 10 x64, Celeron 540, 2 ГБ ОЗУ</dd></div>
+          <div><dt>Рекомендуется</dt><dd>Windows 10 x64, Pentium E5400, 2 ГБ ОЗУ или больше</dd></div>
+          <div><dt>Windows 7</dt><dd>Для неё нужна отдельная сборка; текущая версия 7.1.0 не заявляет совместимость</dd></div>
+          <div><dt>Диск</dt><dd>20 МБ свободного места</dd></div>
+          <div><dt>Аккаунт</dt><dd>Spotify Premium для воспроизведения</dd></div>
+          <div><dt>Интернет</dt><dd>Для входа, медиатеки и аудиопотока</dd></div>
+          <div><dt>Версия</dt><dd>Zephyr 7.1.0</dd></div>
+        </dl>
+      </div>
+    </section>
+
+    <section class="section-shell download-section" id="download">
+      <img src="assets/Zephyr.ico" alt="Небесно-голубая иконка Zephyr с облаками" width="112" height="112">
+      <div>
+        <p class="eyebrow">Готов попробовать?</p>
+        <h2>Скачай Zephyr</h2>
+        <p>Установщик уже находится внутри этого сайта. Данные аккаунта в пакет не включены.</p>
+      </div>
+      <div class="download-actions">
+        <a class="button primary" href="downloads/Zephyr-7.1.0-Setup.exe" download>Скачать 7.1.0</a>
+        <button class="hash-button" type="button" data-hash="B9FC956C9176377CA07BF688DD35098565E52E09518EDAC2E8A25FF37C145DF7">Скопировать SHA‑256</button>
+      </div>
+    </section>
+
+    <section class="feedback-section" id="feedback">
+      <div class="section-shell feedback-grid">
+        <div>
+          <p class="eyebrow">Обратная связь</p>
+          <h2>Сообщи о проблеме</h2>
+          <p>Имя не требуется. Контакт можно оставить добровольно. Обращение хранится локально не более 30 дней и может быть удалено с этого браузера.</p>
+          <button class="text-button" id="delete-feedback" type="button">Удалить мои отправленные обращения</button>
+          <p class="delete-status" id="delete-status" role="status" aria-live="polite"></p>
+        </div>
+        <form id="feedback-form" novalidate>
+          <input type="hidden" name="startedAt" id="form-started-at">
+          <div class="honeypot" aria-hidden="true">
+            <label for="website">Не заполнять</label>
+            <input id="website" name="website" type="text" tabindex="-1" autocomplete="off">
+          </div>
+          <label for="topic">Тема</label>
+          <select id="topic" name="topic" required>
+            <option value="">Выбери тему</option>
+            <option>Ошибка</option>
+            <option>Предложение</option>
+            <option>Конфиденциальность</option>
+            <option>Другое</option>
+          </select>
+          <label for="message">Сообщение</label>
+          <textarea id="message" name="message" minlength="20" maxlength="2000" rows="6" required aria-describedby="message-help"></textarea>
+          <span class="field-help" id="message-help">От 20 до 2000 символов.</span>
+          <label for="contact">Контакт для ответа <span>(необязательно)</span></label>
+          <input id="contact" name="contact" type="text" maxlength="120" autocomplete="email" placeholder="Email или Telegram">
+          <label class="check-row"><input name="privacyConsent" type="checkbox" required> <span>Я согласен с <a href="privacy.html">политикой конфиденциальности</a> и обработкой данных обращения.</span></label>
+          <label class="check-row"><input name="ageConfirmed" type="checkbox" required> <span>Мне исполнилось 16 лет. Данные детей младше 16 лет через форму не принимаются.</span></label>
+          <button class="button form-submit" type="submit">Отправить обращение</button>
+          <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="section-shell footer-grid">
+      <div><strong>Zephyr</strong><span>Лёгкий плеер для Windows</span></div>
+      <p>Независимый проект. Не связан и не аффилирован со Spotify.</p>
+      <a href="https://t.me/Makzut_Replaces" target="_blank" rel="noreferrer">By Makzut · Telegram</a>
+      <nav class="legal-links" aria-label="Юридическая информация">
+        <a href="privacy.html">Конфиденциальность</a>
+        <a href="terms.html">Условия</a>
+        <a href="offer.html">Оферта</a>
+        <a href="refunds.html">Возвраты</a>
+        <a href="cookies.html">Cookie</a>
+        <a href="requisites.html">Реквизиты</a>
+      </nav>
+    </div>
+  </footer>
+
+  <section class="cookie-banner" id="cookie-banner" role="dialog" aria-labelledby="cookie-title" aria-describedby="cookie-description" hidden>
+    <div>
+      <h2 id="cookie-title">Настройки cookie</h2>
+      <p id="cookie-description">Обязательный cookie сохраняет твой выбор. Агрегированная аналитика включается только с согласия и не содержит IP или сторонних SDK. <a href="cookies.html">Подробнее</a>.</p>
+    </div>
+    <div class="cookie-actions">
+      <button type="button" data-cookie-choice="essential">Только обязательные</button>
+      <button type="button" data-cookie-choice="analytics">Разрешить аналитику</button>
+    </div>
+  </section>
+
+  <noscript><p class="noscript">JavaScript выключен: скачивание работает, но форма, cookie-настройки и аналитика недоступны.</p></noscript>
+
+  <script src="app.js"></script>
+</body>
+</html>
